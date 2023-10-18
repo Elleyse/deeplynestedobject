@@ -23,3 +23,9 @@ maybe I can come up with some coping mechanisms.
 
 website link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2824670/ 
 
+things I want to track:
+- what class I am in
+- what time I am feeling angry 
+- who is talking in my class when I am angry
+- how much have I eaten 
+- do I understand what's going on?
