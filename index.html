@@ -10,13 +10,41 @@
     <div class="image-container">
         <img src="milo/circle.jpg" alt="Image 1">
         <img src="milo/cube.jpg" alt="Image 2">
+        <img src="milo/dead.jpg" alt="Image 3">
+        <img src="milo/dragon.jpg" alt="Image 4">
+        <img src="milo/eyes.jpg" alt="Image 5">
+        <img src="milo/fold.jpg" alt="Image 6">
+        <img src="milo/frog.jpg" alt="Image 7">
+        <img src="milo/lay.jpg" alt="Image 8">
+        <img src="milo/squish.jpg" alt="Image 9">
     </div>
+
+    <h2>
+        ADHD SCHOOL TRACKER
+    </h2>
+
     <div id="userContainer">
         <h1>User Profile</h1>
         <div id="userInfo"></div>
-        <textarea id="textEditor" placeholder="type your text here..."></textarea>
+       <!-- <form> -->
+        <label for="">name</label>
+        <input id="name" type="text" value="">
+        <br>
+        <label for="">time</label>
+        <input id="time" type="text" value="">
+        <br>
+        <label for="">emotion</label>
+        <input id="emotion" type="text" value="">
+        <br>
+        <label for="">class</label>
+        <input id="classes" type="text" value="">
+       <!-- </form> -->
+       
+       <p id="response"></p>
+       
+        <!-- <textarea id="textEditor" placeholder="type your text here..."></textarea> -->
         <button onclick="saveTextEditorContent()">Save Text Editor Content</button>
-        <button onclick="displayUser()">Display User Info</button>
+        <button onclick="displayName()">Display User Info</button>
     </div>
     <script src="js/site.js"></script>
     <script src="js/quizData.js"></script>

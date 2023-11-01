@@ -1,26 +1,26 @@
-// app.js
-function displayUser() {
-    var userInfoContainer = document.getElementById('userInfo');
-    var textEditorContent = document.getElementById('textEditor').value;
+// // app.js
+// function displayUser() {
+//     var userInfoContainer = document.getElementById('userInfo');
+//     var textEditorContent = document.getElementById('textEditor').value;
 
-    userInfoContainer.innerHTML = '';
+//     userInfoContainer.innerHTML = '';
 
-    for (var key in user) {
-        if (Array.isArray(user[key])) {
-            userInfoContainer.innerHTML += `<p>${key}: ${user[key].join(', ')}</p>`;
-        } else if (typeof user[key] !== 'function') {
-            userInfoContainer.innerHTML += `<p>${key}: ${user[key]}</p>`;
-        }
-    }
+//     for (var key in user) {
+//         if (Array.isArray(user[key])) {
+//             userInfoContainer.innerHTML += `<p>${key}: ${user[key].join(', ')}</p>`;
+//         } else if (typeof user[key] !== 'function') {
+//             userInfoContainer.innerHTML += `<p>${key}: ${user[key]}</p>`;
+//         }
+//     }
 
-    user.displayInfo();
+//     user.displayInfo();
 
-    userInfoContainer.innerHTML += `<p>Text Editor Content: ${textEditorContent}</p>`;
+//     userInfoContainer.innerHTML += `<p>Text Editor Content: ${textEditorContent}</p>`;
 
-    saveToLocalStorage('textEditorContent', textEditorContent);
+//     saveToLocalStorage('textEditorContent', textEditorContent);
 
 
-}
+// }
 function saveToLoacalStorage(key, value){
     localStorage.setItem(key, value);
 
