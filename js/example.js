@@ -114,65 +114,73 @@ document.body.style.cursor = 'url("milo/squish.jpg"), auto';
 
 //CODE FOR QUIZZZZ
 
-var allQuestions = [{
-    question: "what time of the day is it?",
-    choices: ['9', '10', '11', '12', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-    correctAnswer: 3
-},
-{
-    question: 'are you hungry',
-    choices: ['yes', 'a little', 'no'],
-    correctAnswer: 1
-},
-{
-    question: 'how well am I understanding the subject?',
-    choices: ['onw hundred percent','pretty good', 'medium', 'not at all'],
-    correctAnswer: 3
-},
-{
-    question: 'what class are you in?',
-    choices: ['kinship', 'studio', 'lab', 'drawing', 'history', 'fashion'],
-    correctAnswer: 2
-}
-];
+// var allQuestions = [{
+//     question: "what time of the day is it?",
+//     choices: ['9', '10', '11', '12', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+//     correctAnswer: 3
+// },
+// {
+//     question: 'are you hungry',
+//     choices: ['yes', 'a little', 'no'],
+//     correctAnswer: 1
+// },
+// {
+//     question: 'how well am I understanding the subject?',
+//     choices: ['onw hundred percent','pretty good', 'medium', 'not at all'],
+//     correctAnswer: 3
+// },
+// {
+//     question: 'what class are you in?',
+//     choices: ['kinship', 'studio', 'lab', 'drawing', 'history', 'fashion'],
+//     correctAnswer: 2
+// }
+// ];
 
-var questionTitle = document.getElementById('questionTitle');
-var selectionList = document.getElementById('selectionList');
-var nextButton = document.getElementById('nextButton');
+// var questionTitle = document.getElementById('questionTitle');
+// var selectionList = document.getElementById('selectionList');
+// var nextButton = document.getElementById('nextButton');
 
-var i = 0;
-var length1 = allQuestions.length;
-var correctAnswer = 0;
+// var i = 0;
+// var length1 = allQuestions.length;
+// var correctAnswer = 0;
 
-function populateQuestion() {}
+// function populateQuestion() {}
 
-nextButton.onclick = function() {
-    if(i > allQuestions.length - 1){
-        i=0;
-    }
-    populateQuestion(i);
-    i++;
-};
+// nextButton.onclick = function() {
+//     if(i > allQuestions.length - 1){
+//         i=0;
+//     }
+//     populateQuestion(i);
+//     i++;
+// };
 
-function populateQuestion(qNum) {
-    var individualQuestion = allQuestions[i];
-    questionTitle.innerText = individualQuestion.question;
+// function populateQuestion(qNum) {
+//     var individualQuestion = allQuestions[i];
+//     questionTitle.innerText = individualQuestion.question;
 
-    selectionList.innerHTML = "";
-    for(key in individualQuestion.choices){
-        var radioBtnName = "question"+i+"_choice";
-        var choiceText = individualQuestion.choices[key];
-        selectionList.appendChild(createLi(radioBtnName,choiceText));
-    }
-}
+//     selectionList.innerHTML = "";
+//     for(key in individualQuestion.choices){
+//         var radioBtnName = "question"+i+"_choice";
+//         var choiceText = individualQuestion.choices[key];
+//         selectionList.appendChild(createLi(radioBtnName,choiceText));
+//     }
+// }
 
-function createLi(name, choiceText) {
-    var li = document.createElememt('li');
-    var radioHtml = '<input type="radio" name="'
-+ name + '"';
-    radioHtml += '/>';
-    radioHtml += choiceText;
-    e.innerHtml = radioHtml;
-    return e;
-}
+// function createLi(name, choiceText) {
+//     var li = document.createElememt('li');
+//     var radioHtml = '<input type="radio" name="'
+// + name + '"';
+//     radioHtml += '/>';
+//     radioHtml += choiceText;
+//     e.innerHtml = radioHtml;
+//     return e;
+// }
+//real coding this time maybe :')
 
+const ul_1 = document.querySelector("option1");
+const ul_2 = document.querySelector("option2");
+const ul_3 = document.querySelector("option3");
+
+const q1 = document.querySelector(".q1");
+const q2 = document.querySelector(".q2");
+const q3 = document.querySelector(".q3");
