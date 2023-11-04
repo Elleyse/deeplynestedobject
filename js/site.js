@@ -151,14 +151,54 @@ function displayName() {
     console.log(user);
     let display = document.getElementById("response");
     let time = document.getElementById("time");
+    user.time = time.value;
     console.log(time.value);
-    display.innerHTML = user.name;
     let emotion = document.getElementById("emotion");
     console.log(emotion.value);
+    display.innerHTML = user.time;
     let classes = document.getElementById("classes");
     console.log(classes.value);
-    display.innerHTML = user.name;
+   // string = user.name+"\n"+user.time;
+   let image = generateImage(user.name);
+    string = `<img src="${image}">`
+    display.innerHTML = string;
 }
+
+function generateImage(name){
+    if (name.length != 0){
+        let randomposition = getRandomInt(images.length);
+        let imageLocation = "milo/" + images[randomposition] + ".jpg";
+        return imageLocation;
+    }
+    
+}
+// var a = "This is";
+// var b = "a string";
+// var c = a+b;
+// console.log(c);
+
+const images = [
+    "box",
+    "circle",
+    "cube",
+    "dead",
+    "dragon",
+    "eyes",
+    "fold",
+    "frog",
+    "lay",
+    "squish",
+    "strench",
+    "surprise",
+    "wink",
+];
+
+console.log(images[getRandomInt(images.length)]);
+console.log(images[1]);
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
 
 // function displayTime() {
 //     let time = document.getElementById("time");
@@ -169,3 +209,4 @@ function displayName() {
 //     display.innerHTML = user.time;
 // }
 
+//string , string = user.name+"\n"+user.time; 
